@@ -1,44 +1,47 @@
 ---
-description: 使用控制台
+description: 用 Electron 客户端安装单 ZIP、A/B ZIP 或已解压资源文件夹
 ---
 
 # 常规安装
 
-常规安装指在 \[淬火试炼\] 控制台文件 **QuenchingModCN.exe** 能够正常工作的情况下
+## 1 下载并打开客户端
 
-直接使用控制台进行安装
+从[客户端 Release](https://github.com/UIZorrot/Quenching-Client/releases/tag/3.5)下载 `QMC3.5-Win.zip`，解压到可写的目录，运行 `QMClient.exe`。Mac 步骤见[Mac 安装](mac-an-zhuang.md)。
 
-这是大部分情况下使用的安装方式
+请保留整个解压目录。GitHub 的 “Source code” ZIP 是源码；`client-351-*.bin` 和 `.zst` 是自动更新产物，都不是供玩家启动的客户端。
 
-相对来说也是最为轻松的
+## 2 选择游戏目录
 
-## 下载
+在首页点击“选择魔兽目录”，选中魔兽争霸 III 的安装目录。不要选择客户端目录或完整包下载目录。
 
-在官方网站或者Hiveworkshop获取最新的下载地址:
+确认首页显示你要使用的 Retail 或 PTR 分支。游戏可执行文件通常位于：
 
-{% embed url="http://www.warchasersreforged.com/dccn.html" %}
+- `Warcraft III/_retail_/x86_64/Warcraft III.exe`
+- `Warcraft III/_ptr_/x86_64/Warcraft III.exe`
 
-{% hint style="info" %}
-[https://www.hiveworkshop.com/forums/quenching-mod.777/](https://www.hiveworkshop.com/forums/quenching-mod.777/)
-{% endhint %}
+根目录可能只有启动器。请以所选分支中的游戏文件为准。
 
-选择**客户端**进行下载
+## 3 获取完整资源包
 
-## 安装
+从[完整包 Release](https://github.com/UIZorrot/Quenching-Assets/releases/tag/3.5)或客户端下载入口获取资源。
 
-下载MOD并将其放置在魔兽争霸的根目录
+如果下载页提供 A、B 两个 ZIP，请下载两份。A/B 是独立可解压的普通 ZIP，不需要把它们拼接成一个文件。
 
-注意每个人的魔兽安装路径可能是不同的
+## 4 选择资源并安装
 
-![](../.gitbook/assets/wei-xin-tu-pian-20210630145339.png)
+点击首页“安装完整包”。新版安装弹窗显示目标分支目录，提供两个入口：
 
-双击打开控制台，点击 **\[安装MOD\]** 即可
+- **ZIP 压缩包**：选择完整 ZIP；使用 A/B 包时同时选择两份。
+- **已解压文件夹**：选择包含完整资源的文件夹；如果先解压 A/B，请把两份资源合并到同一个目录。
 
-![](../.gitbook/assets/wei-xin-tu-pian-20210630143613.png)
+不同客户端构建可能使用“安装资源包”等文案，安装源仍是完整包 ZIP 或资源文件夹。不要选客户端 ZIP。
 
-{% hint style="warning" %}
-_如果在安装的过程中进度条停住了较长时间，重新打开控制台并且点击安装即可_‌
-{% endhint %}
+等待客户端报告安装结果，再检查首页的完整包状态。已安装时，新版按钮会显示“重新安装完整包”；你仍需选择本地安装源，这个按钮不会另下一个完整包。
 
-使用**控制台/战网/网易对战平台**打开即可
+## 5 应用配置并启动
 
+在首页确认游戏版本、SD/HD/DE 画质和 MOD 开关，然后启动游戏。新版客户端在安装完成后会按保存的配置应用资源，保留你原来的 MOD 开关状态。
+
+安装资源包和开启 MOD 是两项操作。若安装前 MOD 处于关闭状态，安装后请按需要开启。
+
+如果客户端报告“部分资源设置未生效”，请按错误详情处理；完整包复制完成不代表每一项配置都已应用。

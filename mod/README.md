@@ -1,39 +1,33 @@
-# Quenching
+---
+description: 文档仓库、客户端与完整资源包的职责和版本区别
+---
 
-#### 介绍
-{**以下是码云平台说明，您可以替换此简介**
-码云是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用码云实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
+# 资源与版本说明
 
-#### 软件架构
-软件架构说明
+## 项目仓库
 
+| 仓库 | 用途 |
+| --- | --- |
+| [Quenching-Gitbook](https://github.com/UIZorrot/Quenching-Gitbook) | 使用说明与常见问题 |
+| [Quenching-Client](https://github.com/UIZorrot/Quenching-Client) | Electron 客户端与便携下载包 |
+| [Quenching-Assets](https://github.com/UIZorrot/Quenching-Assets) | 完整 MOD 资源与资源发布 |
 
-#### 安装教程
+本仓库中的历史 `source files` 和 `shaders` 目录不作为最新安装包的下载入口。它们保留旧资源供参考，玩家请使用客户端与完整包 Release。
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+## 三种版本
 
-#### 使用说明
+魔兽游戏版本决定兼容配置；淬火 MOD 版本描述资源版本；客户端内部构建版本描述程序构建。三者不必相同。
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+对外名称为 3.5 的客户端可以有不同内部构建，查看[更新说明](../an-zhuang/geng-xin.md)和发布页，不能只凭首页显示“3.5”判断已包含某个测试修复。
 
-#### 参与贡献
+## 资源配置
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+客户端按游戏版本、画质、分支和设置选择着色器、DNC、皮肤、地形与水面资源。玩家无需手动移动这些配置模板。
 
+配套资源对齐要同时检查表结构、引用路径和对应纹理。透明水的特殊水表、HD 的地形/悬崖表与 3.0 DE 的直接地形替换有不同用途，不应互相代替。
 
-#### 码云特技
+## 维护文档
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5.  码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+修改说明时保留现有页面路径和 SUMMARY 导航；新增页面需要加入目录。不要把本地测试包写成已经发布，也不要把玩家自定义资源列为应批量删除的文件。
+
+文档不包含上传身份、签名私钥、玩家本机路径或测试配置。反馈功能错误请附[常见问题](../chang-jian-wen-ti/README.md)中列出的信息。

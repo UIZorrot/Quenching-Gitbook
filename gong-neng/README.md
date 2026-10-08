@@ -1,32 +1,15 @@
 ---
-description: 淬火的主要功能介绍
+description: 首页、设置、涂装和自定义资源的使用入口
 ---
 
 # 功能
 
-本章将会对淬火中包含的功能做出一个概述
+先在首页选择游戏目录和分支，并开启 MOD。没有完整包时，你可以使用基础功能；依赖完整资源的选项会显示相应提示。
 
-请注意这些功能的使用都需要依赖控制台才能生效
+- [首页与启动配置](zhu-yao-gong-neng.md)：游戏分支、版本、画质、MOD 开关与启动。
+- [游戏与画面设置](zong-he.md)：地形、树木、光照、水面和画质限制。
+- [界面与基础设置](tiao-zheng.md)：游戏 UI、着色器兼容选项和渲染重置。
+- [涂装](tu-zhuang.md)：选择与管理英雄、单位和建筑皮肤。
+- [自定义资源与战役](zi-ding-yi.md)：导入模型、第三方包、地图和战役。
 
-如果出于任何原因你无法使用控制台
-
-我们也会对某些关键性的功能做如何手动修改的讲解
-
-### 总体来说，淬火的功能主要分为以下五种
-
-{% page-ref page="zhu-yao-gong-neng.md" %}
-
-{% page-ref page="zong-he.md" %}
-
-{% page-ref page="tiao-zheng.md" %}
-
-{% page-ref page="tu-zhuang.md" %}
-
-{% page-ref page="zi-ding-yi.md" %}
-
-
-
-
-
-
-
+以下说明按 3.5 系列 Electron 客户端整理。近期测试构建与公开下载包的区别见[版本说明](../an-zhuang/geng-xin.md#版本说明)。
